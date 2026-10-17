@@ -192,7 +192,12 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="container-page flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-white/65">
           <p>© {new Date().getFullYear()} Sponsor OS · Sample teams, athletes and brands are fictional. Payments run in Razorpay test mode.</p>
-          <Link href="/how-it-works/" className="underline underline-offset-2 hover:text-white">How payments work</Link>
+          <nav aria-label="Policies" className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link href="/terms/" className="underline underline-offset-2 hover:text-white">Terms</Link>
+            <Link href="/privacy/" className="underline underline-offset-2 hover:text-white">Privacy</Link>
+            <Link href="/refunds/" className="underline underline-offset-2 hover:text-white">Refunds &amp; cancellation</Link>
+            <Link href="/contact/" className="underline underline-offset-2 hover:text-white">Contact</Link>
+          </nav>
         </div>
       </div>
     </footer>
